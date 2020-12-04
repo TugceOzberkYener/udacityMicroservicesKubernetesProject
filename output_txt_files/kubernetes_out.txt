@@ -1,1 +1,12 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops2) (base) TugceOzberkYeners-MacBook-Pro:udacityMicroservicesKubernetesProject tugce.ozberkyener$ kubectl get pod
+NAME                                       READY   STATUS    RESTARTS   AGE
+udacitymicroservicesprj-85645b7674-mh9zn   1/1     Running   0          7m29s
+udacitypredictions                         1/1     Running   0          6s
+(.devops2) (base) TugceOzberkYeners-MacBook-Pro:udacityMicroservicesKubernetesProject tugce.ozberkyener$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "udacitypredictions" already exists
+NAME                                       READY   STATUS    RESTARTS   AGE
+udacitymicroservicesprj-85645b7674-mh9zn   1/1     Running   0          7m42s
+udacitypredictions                         1/1     Running   0          19s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
